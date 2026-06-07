@@ -146,6 +146,9 @@ body {
 /* -------------------- */
 /* MENU ITEMS           */
 /* -------------------- */
+.inf {
+  color: #ff5733; /* Un tono naranja */
+}
 
 .menu-item {
   display: inline-block;
