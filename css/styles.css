@@ -1,0 +1,205 @@
+/* -------------------- */
+/* ROOT COLORS          */
+/* -------------------- */
+
+:root {
+  font-size: 100%;
+
+  /* Brand colours (Monte Bianco) */
+  --blue-main: #cfe9ff;
+  --blue-light: #e9f5ff;
+  --blue-accent: #a8d4ff;
+  --white: #ffffff;
+  --grey-text: #333333;
+  --shadow: rgba(0,0,0,0.1);
+
+  /* Flavour colours (KEEPING THESE!) */
+  --pastel-cream: #fff7e6;
+  --pastel-pink: #ffd6e8;
+  --pastel-blue: #d6ecff;
+  --pastel-green: #d9f7d9;
+  --pastel-yellow: #fff2b3;
+  --pastel-lilac: #f0e1ff;
+  --pastel-mint: #e0fff4;
+  --pastel-peach: #ffe0cc;
+  --pastel-rose: #ffe6f2;
+  --pastel-aqua: #d9f9ff;
+}
+
+/* -------------------- */
+/* RESET                */
+/* -------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--white);
+  color: var(--grey-text);
+}
+
+/* -------------------- */
+/* TOP BAR + NAV        */
+/* -------------------- */
+
+.top-bar {
+  background-color: var(--blue-accent);
+  color: var(--white);
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 0.3rem 1rem var(--shadow);
+}
+
+.nav {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+.nav li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+.nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.nav a:hover,
+.nav a[aria-current="page"] {
+  text-decoration: underline;
+}
+
+/* -------------------- */
+/* SIDE ANNOUNCEMENTS   */
+/* -------------------- */
+
+.side-bar {
+  position: fixed;
+  top: 6rem;
+  bottom: 0;
+  width: 12%;
+  background-color: var(--blue-light);
+  padding: 1.5rem 1rem;
+  border-radius: 0 1rem 1rem 0;
+  box-shadow: 0 0.3rem 1rem var(--shadow);
+  overflow-y: auto;
+}
+
+.left-bar {
+  left: 0;
+}
+
+.right-bar {
+  right: 0;
+  border-radius: 1rem 0 0 1rem;
+}
+
+/* -------------------- */
+/* MAIN CONTENT         */
+/* -------------------- */
+
+.flavour-area,
+.menu-area,
+.content-area {
+  margin-left: 14%;
+  margin-right: 14%;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* -------------------- */
+/* FLAVOUR CIRCLES      */
+/* -------------------- */
+
+.flavour-row {
+  margin-bottom: 2rem;
+}
+
+.flavour {
+  display: inline-block;
+  width: 20%;
+  min-width: 10rem;
+  margin: 1rem;
+  padding: 2rem 1rem;
+  border-radius: 50%;
+  box-shadow: 0 0.3rem 1rem var(--shadow);
+}
+
+/* Flavour colours preserved */
+.vanilla { background-color: var(--pastel-cream); }
+.strawberry { background-color: var(--pastel-pink); }
+.chocolate { background-color: var(--pastel-peach); }
+.mint { background-color: var(--pastel-mint); }
+.pistachio { background-color: var(--pastel-green); }
+.lemon { background-color: var(--pastel-yellow); }
+.blueberry { background-color: var(--pastel-blue); }
+.caramel { background-color: var(--pastel-rose); }
+.cottoncandy { background-color: var(--pastel-lilac); }
+.matcha { background-color: var(--pastel-aqua); }
+
+/* -------------------- */
+/* MENU ITEMS           */
+/* -------------------- */
+
+.menu-item {
+  display: inline-block;
+  width: 25%;
+  min-width: 12rem;
+  margin: 1rem;
+  background-color: var(--blue-light);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.3rem 1rem var(--shadow);
+}
+
+.menu-item img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.price {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+/* -------------------- */
+/* ABOUT + CONTACT      */
+/* -------------------- */
+
+.content-block {
+  background-color: var(--blue-light);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.3rem 1rem var(--shadow);
+}
+
+.content-block ul {
+  margin-top: 1rem;
+  padding-left: 2rem;
+}
+
+/* Contact form */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border: 0.1rem solid var(--blue-accent);
+  border-radius: 0.5rem;
+}
+
+.contact-form button {
+  background-color: var(--blue-accent);
+  color: var(--white);
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
